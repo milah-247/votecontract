@@ -1,0 +1,44 @@
+name: Task / feature (maintainers)
+description: Well-scoped work item, e.g. for a Drips Wave sprint
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem
+    validations:
+      required: true
+  - type: textarea
+    id: scope
+    attributes:
+      label: Scope
+      description: What is in and out of scope.
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance criteria
+      value: "- [ ] "
+    validations:
+      required: true
+  - type: textarea
+    id: testing
+    attributes:
+      label: Testing requirements
+    validations:
+      required: true
+  - type: textarea
+    id: deps
+    attributes:
+      label: Dependencies
+      value: None
+  - type: dropdown
+    id: complexity
+    attributes:
+      label: Wave complexity
+      options:
+        - Trivial (100 points)
+        - Medium (150 points)
+        - High (200 points)
+    validations:
+      required: true
