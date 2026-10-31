@@ -1,14 +1,19 @@
-# Compiler files
-cache/
-out/
+# Rust / Cargo
+/target/
+**/*.rs.bk
 
-# Ignores development broadcast logs
-!/broadcast
-/broadcast/*/31337/
-/broadcast/**/dry-run/
+# Soroban test snapshots are regenerated on every `cargo test`
+**/test_snapshots/
 
-# Docs
-docs/
+# Stellar CLI local state (identities, network config) — never commit keys
+.stellar/
+.soroban/
 
-# Dotenv file
+# Environment / secrets
 .env
+.env.*
+*.pem
+
+# Editors / OS
+.idea/
+.DS_Store
